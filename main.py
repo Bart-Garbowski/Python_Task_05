@@ -43,11 +43,18 @@ while True:
     elif command == "zakup":
         product_name = input("Nazwa produktu: ")
         price = input("Cena za sztukę: ")
+        try:
+            price = float(price)
+        except ValueError:
+            print("Prosze podawac tylko liczby! ")
+            continue
+
         count = input("Ilość: ")
-
-        price = float(price)
-        count = int(count)
-
+        if count.isnumeric():
+            count = int(count)
+        else:
+            print("Prosze podawac tylko liczby! ")
+            continue
         product_total_price = price*count
 
         if product_total_price > saldo:
@@ -66,6 +73,11 @@ while True:
 
     elif command == "saldo":
         price = input("Kwota zmiany salda: ")
+        try:
+            price = float(price)
+        except ValueError:
+            print("Prosze podawac tylko liczby! ")
+            continue
         price = float(price)
         koment = input("Komentarz: ")
         if (saldo + price) >= 0:
@@ -85,6 +97,11 @@ while True:
         else:
             if product_name in store.keys():
                 count = input("Ilość: ")
+                try:
+                    count = float(count)
+                except ValueError:
+                    print("Prosze podawac tylko liczby! ")
+                    continue
                 price = store[product_name]["price"]
                 ilosc_w_magazynie = store[product_name]["count"]
                 price = float(price)

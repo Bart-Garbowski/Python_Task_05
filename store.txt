@@ -1,0 +1,9 @@
+Operacja na saldzie, nowe saldo po operacji = 1000.0. Komentarz: wyplata. Ile: -200.0 PLN
+Operacja na saldzie, nowe saldo po operacji = 1030.0. Komentarz: wplyw. Ile: 30.0 PLN
+Operacja na saldzie, nowe saldo po operacji = 1065.7. Komentarz: wplyw. Ile: 35.7 PLN
+zakup: mleko, 4.5, 30
+zakup: maslo, 60.0, 4
+Sprawdzenie stanu konta: 690.7 
+Sprzedano product maslo. Ilosc sztuk: 4. Za kwote 240.0 PLN.
+Sprawdzenie stanu magazynu: maslo 
+Sprawdzenie stanu magazynu: mleko 
